@@ -1,0 +1,67 @@
+.single-project {
+  background-color: #000;
+  color: #fff;
+}
+
+.back-button {
+  padding: 10px 20px;
+  background-color: rgba(0, 0, 0, 0.3);
+  backdrop-filter: blur(10px);
+  border-radius: 30px;
+  transition: all 0.3s ease;
+}
+
+.back-button:hover {
+  background-color: rgba(0, 0, 0, 0.5);
+  transform: translateX(-5px);
+}
+
+.project-image {
+  border-radius: 8px;
+  overflow: hidden;
+  transition: transform 0.5s ease;
+}
+
+.gallery-item:hover .project-image {
+  transform: scale(1.02);
+}
+
+.next-project-section {
+  position: relative;
+  overflow: hidden;
+}
+
+.next-project-section::before {
+  content: '';
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 1px;
+  background: linear-gradient(to right, transparent, rgba(255, 255, 255, 0.2), transparent);
+}
+
+.project-link {
+  position: relative;
+  transition: transform 0.3s ease;
+}
+
+.project-link:hover {
+  transform: translateY(-3px);
+}
+
+/* Custom Cursor */
+.cursor {
+  position: fixed;
+  top: 0;
+  left: 0;
+  pointer-events: none;
+  z-index: 9999;
+  mix-blend-mode: difference;
+}
+
+.cursor__inner {
+  fill: #fff;
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  transform-origin: center center;
+}
