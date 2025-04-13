@@ -23,11 +23,11 @@ const SingleProject: React.FC<SingleProjectProps> = ({ projectId, onNavigateBack
     year: `202${projectId}`,
     client: "Studio Digital",
     services: ["UX Design", "Development", "Branding"],
-    mainImage: `src/assets/img/demo1/${projectId}.jpg`,
+    mainImage: `/assets/img/demo1/${projectId}.jpg`,
     gallery: [
-      `src/assets/img/demo1/${projectId}.jpg`,
-      `src/assets/img/demo1/${projectId === 8 ? 1 : projectId + 1}.jpg`,
-      `src/assets/img/demo1/${projectId <= 2 ? 8 - (2 - projectId) : projectId - 2}.jpg`
+      `/assets/img/demo1/${projectId}.jpg`,
+      `/assets/img/demo1/${projectId === 8 ? 1 : projectId + 1}.jpg`,
+      `/assets/img/demo1/${projectId <= 2 ? 8 - (2 - projectId) : projectId - 2}.jpg`
     ]
   };
 

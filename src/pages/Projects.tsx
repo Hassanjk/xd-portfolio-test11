@@ -170,7 +170,7 @@ const Projects = React.forwardRef<HTMLDivElement, ProjectsProps>(({ onNavigateBa
                     data-scroll-speed="1" 
                     data-scroll-direction="vertical"
                     style={{ 
-                      backgroundImage: `url(src/assets/img/demo1/${num}.jpg)`,
+                      backgroundImage: `url(/assets/img/demo1/${num}.jpg)`,
                       backgroundSize: 'cover',
                       backgroundPosition: '50% 25%'
                     }}
